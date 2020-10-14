@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bBrrgPrcaAgZ4Ptt4yJR/EglcXUhjcLn24Req5w3fOaTj/FXIJDGxlPNUup6hbDksw61H354QjgBjDyvhodVSQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tinaw\\1dv607\\1dv607-a2\\1dv607-a2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tinaw\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
