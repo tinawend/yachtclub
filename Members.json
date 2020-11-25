@@ -1,22 +1,24 @@
 [
   {
-    "Name": "t",
-    "Personalnumber": "4",
-    "Id": 2
+    "Name": "hallå",
+    "Personalnumber": "00000010",
+    "MemberId": "740507244",
+    "Boats": [
+      {
+        "Type": "Sailboat",
+        "Lenght": "2"
+      }
+    ]
   },
   {
-    "Name": "t",
-    "Personalnumber": "2",
-    "Id": 2
-  },
-  {
-    "Name": "t",
-    "Personalnumber": "3",
-    "Id": 1
-  },
-  {
-    "Name": "ooop",
-    "Personalnumber": "5555",
-    "Id": 3
+    "Name": "hej",
+    "Personalnumber": "9999999",
+    "MemberId": "740507214",
+    "Boats": [
+      {
+        "Type": "Motor",
+        "Lenght": "3"
+      }
+    ]
   }
 ]
