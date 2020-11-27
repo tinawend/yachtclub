@@ -14,7 +14,7 @@ namespace _1dv607_a2
       /*
       View function that gives the user different options and actions depending on whats picked.
       */
-              public View()
+        public View()
         {
             Console.WriteLine("1-Add a new member");
             Console.WriteLine("2-List all members");
@@ -33,31 +33,24 @@ namespace _1dv607_a2
                addingAMember(memberRegistry);
                     break;
                 case "2":
-                //  memberRegistry = new MemberRegistry();
                  listMembers(memberRegistry);
                     break;
                 case "3":
-                //  memberRegistry = new MemberRegistry();
                  changeMemberInfo(memberRegistry);
                     break;
                 case "4":
-                // memberRegistry = new MemberRegistry();
                 deleteMember(memberRegistry);
                     break;
                 case "5":
-                // memberRegistry = new MemberRegistry();
                 showSpecificMember(memberRegistry);
                     break;
                 case "6":
-                // memberRegistry = new MemberRegistry();
                 addBoatToMember(memberRegistry);
                     break;
                 case "7":
-                // memberRegistry = new MemberRegistry();
                 deleteBoat(memberRegistry);
                     break;
                 case "8":
-                // memberRegistry = new MemberRegistry();
                 changeBoat(memberRegistry);
                     break;
             }
@@ -175,27 +168,27 @@ namespace _1dv607_a2
 
         }
 
-            public void changeBoat(MemberRegistry memberRegistry) 
-            {
-                Console.WriteLine("Please write an id of a member");
-                string MemberId = Console.ReadLine();
-                Console.WriteLine("Write the Type of the boat you want to change");
-                string Type = Console.ReadLine();
-                Console.WriteLine("Write the lenght of the boat you want to change");
-                string Lenght = Console.ReadLine();
-                Console.WriteLine("Write the new Type of boat");
-                string newType = Console.ReadLine();
-                Console.WriteLine("Write the new lenght of the boat");
-                string newLength = Console.ReadLine();
-                memberRegistry.changeBoat(Type, Lenght, newLength, newType, MemberId);
-            }
+        public void changeBoat(MemberRegistry memberRegistry) 
+        {
+            Console.WriteLine("Please write an id of a member");
+            string MemberId = Console.ReadLine();
+            Console.WriteLine("Write the Type of the boat you want to change");
+            string Type = Console.ReadLine();
+            Console.WriteLine("Write the lenght of the boat you want to change");
+            string Lenght = Console.ReadLine();
+            Console.WriteLine("Write the new Type of boat");
+            string newType = Console.ReadLine();
+            Console.WriteLine("Write the new lenght of the boat");
+            string newLength = Console.ReadLine();
+            memberRegistry.changeBoat(Type, Lenght, newLength, newType, MemberId);
+        }
 
-            public void showSpecificMember(MemberRegistry memberRegistry)
-            {
-                Console.WriteLine("Please write an id of a member");
-                string MemberId = Console.ReadLine();
-                Console.WriteLine(memberRegistry.showMemberInfo(MemberId));
-            }
+        public void showSpecificMember(MemberRegistry memberRegistry)
+        {
+            Console.WriteLine("Please write an id of a member");
+            string MemberId = Console.ReadLine();
+            Console.WriteLine(memberRegistry.showMemberInfo(MemberId));
+        }
 
     /*
          Function that lets you list all members

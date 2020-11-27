@@ -24,11 +24,23 @@ namespace _1dv607_a2
      
         }
 
-        public string Name {get{ return _name; } set{_name = value;}}
-        public string Personalnumber {get{ return _personalnumber;} set{_personalnumber = value;}}
-        public string MemberId {get{ return _memberId;} set{_memberId = value;}}
+        public string Name 
+        {
+            get{ return _name; } set{_name = value;}
+        }
+        public string Personalnumber 
+        {
+            get{ return _personalnumber;} set{_personalnumber = value;}
+        }
+        public string MemberId 
+        {
+            get{ return _memberId;} set{_memberId = value;}
+        }
 
-        public List<Boat> Boats {get{ return _boat;} set{_boat = value;}}
+        public List<Boat> Boats 
+        {
+            get{ return _boat;} set{_boat = value;}
+        }
        
     }
 

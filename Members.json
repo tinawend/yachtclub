@@ -6,19 +6,14 @@
     "Boats": [
       {
         "Type": "Sailboat",
-        "Lenght": "2"
+        "Lenght": "5"
       }
     ]
   },
   {
-    "Name": "hej",
-    "Personalnumber": "9999999",
-    "MemberId": "740507214",
-    "Boats": [
-      {
-        "Type": "Motor",
-        "Lenght": "3"
-      }
-    ]
+    "Name": "poiu",
+    "Personalnumber": "888888888",
+    "MemberId": "860205444",
+    "Boats": []
   }
 ]

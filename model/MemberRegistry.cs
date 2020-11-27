@@ -8,40 +8,40 @@ namespace _1dv607_a2
 {
     public class MemberRegistry
     {
-        public List<Boat> boatList = new List<Boat>();
+            public List<Boat> boatList = new List<Boat>();
 
-        public MemberRegistry()
-        {
+            public MemberRegistry()
+            {
 
-        }
+            }
 
     /*
         Adds a member to the file Members.json.
     */
 
-        public void addMember(string Name, string Personalnumber, string MemberId, string Type, string Lenght, int amountOfBoats) 
-        {
-            string initialJson = File.ReadAllText(@"Members.json");
+            public void addMember(string Name, string Personalnumber, string MemberId, string Type, string Lenght, int amountOfBoats) 
+            {
+                string initialJson = File.ReadAllText(@"Members.json");
 
-            var list = JsonConvert.DeserializeObject<List<object>>(initialJson);
-            
+                var list = JsonConvert.DeserializeObject<List<object>>(initialJson);
+                
 
-            list.Add(new Member(Name, Personalnumber, MemberId, boatList));
-            var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
+                list.Add(new Member(Name, Personalnumber, MemberId, boatList));
+                var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
 
-            File.WriteAllText(@"Members.json", convertedJson);
+                File.WriteAllText(@"Members.json", convertedJson);
 
-        }
+            }
 
         
 
 
-        public List<Boat> AddBoat(string Type, string Lenght, int amountOfBoats, string MemberId)
-        {
-            string initialJson = File.ReadAllText(@"Members.json");
+            public List<Boat> AddBoat(string Type, string Lenght, int amountOfBoats, string MemberId)
+            {
+                string initialJson = File.ReadAllText(@"Members.json");
 
-            var list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
-               
+                var list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
+                
                 foreach (Member item in list.ToList()) 
                 {
                     if(MemberId == item.MemberId) 
@@ -51,12 +51,12 @@ namespace _1dv607_a2
                 }
 
 
-            var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
+                var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
 
-            File.WriteAllText(@"Members.json", convertedJson);
+                File.WriteAllText(@"Members.json", convertedJson);
 
-            return boatList;
-        } 
+                return boatList;
+            } 
 
      /*
         Changes the info of a member.
@@ -95,9 +95,9 @@ namespace _1dv607_a2
     */
             public void deleteMember(string memberToDelete)
             {
-            string initialJson = File.ReadAllText(@"Members.json");
+                string initialJson = File.ReadAllText(@"Members.json");
 
-            var list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
+                var list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
                 foreach (Member item in list.ToList()) 
                 {
                     if(memberToDelete == item.MemberId) 
@@ -105,9 +105,9 @@ namespace _1dv607_a2
                         list.Remove(item);                
                     }
                 }
-            var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
+                var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
 
-            File.WriteAllText(@"Members.json", convertedJson);
+                File.WriteAllText(@"Members.json", convertedJson);
 
             }
 
@@ -135,9 +135,9 @@ namespace _1dv607_a2
 
             public void deleteBoat(string MemberId, string Type, string Lenght) 
             {
-            string initialJson = File.ReadAllText(@"Members.json");
+                string initialJson = File.ReadAllText(@"Members.json");
 
-            var list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
+                var list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
                
                 foreach (Member item in list.ToList()) 
                 {
@@ -156,18 +156,18 @@ namespace _1dv607_a2
                 }
 
 
-            var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
+                var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
 
-            File.WriteAllText(@"Members.json", convertedJson);
+                File.WriteAllText(@"Members.json", convertedJson);
          
 
             }
 
             public void changeBoat(string Type, string Lenght, string newLength, string newType, string MemberId) 
             {
-            string initialJson = File.ReadAllText(@"Members.json");
+                string initialJson = File.ReadAllText(@"Members.json");
 
-            var list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
+                var list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
                
                 foreach (Member item in list.ToList()) 
                 {
@@ -215,10 +215,10 @@ namespace _1dv607_a2
 
             public string showVerboseList()
             {
-            string initialJson = File.ReadAllText(@"Members.json");
+                string initialJson = File.ReadAllText(@"Members.json");
 
-            List<Member> list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
-            var str = "";
+                List<Member> list = JsonConvert.DeserializeObject<List<Member>>(initialJson);
+                var str = "";
                 foreach (Member item in list) 
                 {
                     str += "\n\nName: " + item.Name + "\nId: " + item.MemberId + "\nPersonalNumber: " + item.Personalnumber;
