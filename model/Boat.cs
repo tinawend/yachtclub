@@ -20,11 +20,25 @@ namespace _1dv607_a2
 
         public string Type 
         {
-            get{ return _type; } set{_type = value;}
+            get
+            {
+                return _type; 
+            } 
+            set
+            {
+                _type = value;
+            }
         }
         public string Lenght 
         {
-            get{ return _lenght; } set{_lenght = value;}
+            get
+            {
+                return _lenght; 
+            } 
+            set
+            {
+                _lenght = value;
+            }
         }
        
     }

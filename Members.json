@@ -1,19 +1,21 @@
 [
   {
-    "Name": "hallå",
-    "Personalnumber": "00000010",
-    "MemberId": "740507244",
+    "Name": "Kalle",
+    "Personalnumber": "19950209",
+    "MemberId": "411514561",
     "Boats": [
       {
-        "Type": "Sailboat",
-        "Lenght": "5"
+        "Type": "Motorsailer",
+        "Lenght": "22"
+      },
+      {
+        "Type": "Motorsailer",
+        "Lenght": "55"
+      },
+      {
+        "Type": "Other",
+        "Lenght": "66"
       }
     ]
-  },
-  {
-    "Name": "poiu",
-    "Personalnumber": "888888888",
-    "MemberId": "860205444",
-    "Boats": []
   }
 ]

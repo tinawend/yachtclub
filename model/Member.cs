@@ -26,20 +26,48 @@ namespace _1dv607_a2
 
         public string Name 
         {
-            get{ return _name; } set{_name = value;}
+            get
+            { 
+                return _name; 
+            } 
+            set
+            {
+                _name = value;
+            }
         }
         public string Personalnumber 
         {
-            get{ return _personalnumber;} set{_personalnumber = value;}
+            get
+            {
+                return _personalnumber;
+            } 
+            set
+            {
+                _personalnumber = value;
+            }
         }
         public string MemberId 
         {
-            get{ return _memberId;} set{_memberId = value;}
+            get
+            {
+                return _memberId;
+            } 
+            set
+            {
+                _memberId = value;
+            }
         }
 
         public List<Boat> Boats 
         {
-            get{ return _boat;} set{_boat = value;}
+            get
+            {
+                return _boat;
+            } 
+            set
+            {
+                _boat = value;
+            }
         }
        
     }
